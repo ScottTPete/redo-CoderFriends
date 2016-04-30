@@ -1,0 +1,15 @@
+<div class="activitiesContainer" ng-repeat="activity in activities track by $index">
+
+	<div>
+		Repo: {{activity.repo.name}}
+	</div>
+	<div>
+		Type: {{activity.type}}
+	</div>
+	<div>
+		Message: {{activity.payload.commits[0].message}}
+	</div>
+	<div>
+		Type: {{activity.created_at}}
+	</div>
+</div>
